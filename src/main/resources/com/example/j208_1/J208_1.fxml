@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.j208_1.J208_1Controller" spacing="16" prefWidth="570" prefHeight="170">
+    <children>
+        <MenuBar>
+            <menus>
+                <Menu text="Operation">
+                    <items>
+                        <MenuItem text="Add" onAction="#handleAdd" accelerator="Shortcut+A" />
+                        <MenuItem text="Subtract" onAction="#handleSubtract" accelerator="Shortcut+S" />
+                        <MenuItem text="Multiply" onAction="#handleMultiply" accelerator="Shortcut+M" />
+                        <MenuItem text="Divide" onAction="#handleDivide" accelerator="Shortcut+D" />
+                    </items>
+                </Menu>
+                <!-- Creates the Exit menu in the menu bar. -->
+                <Menu text="Exit">
+
+                    <!-- Calls handleExit when Exit is selected. -->
+                    <MenuItem text="Exit" onAction="#handleExit" />
+
+                </Menu>
+            </menus>
+        </MenuBar>
+        <HBox alignment="CENTER" spacing="7">
+            <children>
+                <Label text="Number 1" />
+                <TextField fx:id="number1Field" prefWidth="72" text="7" />
+                <Label text="Number 2" />
+                <TextField fx:id="number2Field" prefWidth="72" text="8" />
+                <Label text="=" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+                <TextField fx:id="resultField" prefWidth="90" text="15" editable="false" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="7">
+            <children>
+                <Button text="Add" prefWidth="95" onAction="#handleAdd" />
+                <Button text="Subtract" prefWidth="95" onAction="#handleSubtract" />
+                <Button text="Multiply" prefWidth="95" onAction="#handleMultiply" />
+                <Button text="Divide" prefWidth="95" onAction="#handleDivide" />
+            </children>
+        </HBox>
+    </children>
+    <padding><Insets top="0" right="12" bottom="15" left="12" /></padding>
+</VBox>
