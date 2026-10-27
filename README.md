@@ -14,6 +14,9 @@ This project demonstrates how a JavaFX graphical user interface can connect to J
 - FXML layout connected to a Java controller
 - Exit menu action
 
+  <img width="1134" height="393" alt="image" src="https://github.com/user-attachments/assets/3cfe175d-6851-4cb2-af82-54d16f103353" />
+
+
 > **Note:** The feature list reflects the intended calculator assignment. Check it against your final submitted code and remove or revise anything that is not implemented.
 
 ## Technologies and concepts
